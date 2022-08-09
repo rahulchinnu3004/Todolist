@@ -84,6 +84,6 @@ app.get('/download',(req,res)=>{
 
 
 
-app.listen(3000, (req, res) => {
+app.listen(3000 || process.env.PORT , (req, res) => {
     console.log("server is up running");
 });
